@@ -59,7 +59,7 @@ Options
 		<tr>
 			<td>archive_suffix</td>
 			<td>no</td>
-			<td></td>
+			<td>_original</td>
 			<td></td>
 			<td>
 				If the destination needs to be archived, the file or directory will be
