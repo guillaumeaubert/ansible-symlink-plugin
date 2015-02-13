@@ -13,6 +13,16 @@ This Ansible plugin allows creating symlinks while optionally backing up the des
 Installation
 ------------
 
+Go to your ansible's plugins directory and run the following commands:
+
+```
+git clone git@github.com:guillaumeaubert/ansible-symlink-plugin.git symlink
+```
+
+If you don't have a plugins directory, you can edit `ansible.cfg` to define
+`defaults.library`.
+
+
 Options
 -------
 
