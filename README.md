@@ -16,13 +16,64 @@ Installation
 Options
 -------
 
-#TODO
+<table>
+	<thead>
+		<tr>
+			<th>Parameter</th>
+			<th>Required</th>
+			<th>Default</th>
+			<th>Choices</th>
+			<th>Comments</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>src</td>
+			<td>yes</td>
+			<td></td>
+			<td></td>
+			<td>Path of the file or directory to symlink to.</td>
+		</tr>
+		<tr>
+			<td>dest</td>
+			<td>yes</td>
+			<td></td>
+			<td></td>
+			<td>Remote absolute path where the symlink should be created.</td>
+		</tr>
+		<tr>
+			<td>archive</td>
+			<td>no</td>
+			<td>True</td>
+			<td>
+				<ul>
+					<li>True</li>
+					<li>False</li>
+				</ul>
+			</td>
+			<td>
+				This flag indicates whether a backup of the destination should be made,
+				if the destination exists and is not a symlink.
+			</td>
+		</tr>
+		<tr>
+			<td>archive_suffix</td>
+			<td>no</td>
+			<td></td>
+			<td></td>
+			<td>
+				If the destination needs to be archived, the file or directory will be
+				renamed using this suffix.
+			</td>
+		</tr>
+	</thead>
+</table>
 
 
 Examples
 --------
 
-#TODO
+TODO
 
 
 Copyright
