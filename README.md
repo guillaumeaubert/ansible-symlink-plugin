@@ -83,7 +83,27 @@ Options
 Examples
 --------
 
-TODO
+```
+# Archive /etc/apache2 to /etc/apache2.original if it exists and isn't already
+# a symlink, then create a symlink /etc/apache2 pointing to /gitrepo/apache2.
+- symlink:
+    src="/gitrepo/apache2"
+    dest="/etc/apache2"
+    archive=True
+    archive_suffix=.original
+
+# Same as the above, with implicit defaults.
+- symlink:
+    src="/gitrepo/apache2"
+    dest="/etc/apache2"
+
+# Delete the destination if it exists (without making a backup), and create the
+# symlink.
+- symlink:
+    src="/gitrepo/apache2"
+    dest="/etc/apache2"
+    archive=False
+```
 
 
 Copyright
